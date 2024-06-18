@@ -1,0 +1,206 @@
+{
+	//路由页面配置
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent", //透明渐变导航栏 App-nvue 2.4.4+ 支持
+						"searchInput": {
+							"backgroundColor": "rgba(239,239,239,0.7)",
+							"borderRadius": "16px", //输入框圆角
+							"placeholder": "查找商品 如：苹果",
+							"disabled": false, //disable时点击输入框不置焦，可以跳到新页面搜索
+							"placeholderColor": "#606266"
+						}
+					}
+				}
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/goods/group",
+			"style": {
+				"navigationBarTitleText": "商品分类"
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/user/login",
+			"style": {
+				"navigationBarTitleText": "用户登录",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/goods/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "用户注册",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单中心"
+			}
+		},
+		{
+			"path": "pages/order/pay",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		},
+		{
+			"path": "pages/order/paysuccess",
+			"style": {
+				"navigationBarTitleText": "支付结果"
+			}
+		},
+		{
+			"path": "pages/user/address",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		},
+		{
+			"path": "pages/user/editaddr",
+			"style": {
+				"navigationBarTitleText": "编辑地址"
+			}
+		},
+		{
+			"path": "pages/user/createaddr",
+			"style": {
+				"navigationBarTitleText": "添加地址"
+			}
+		},
+		{
+			"path": "pages/goods/collect",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/common/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/update/email",
+			"style": {
+				"navigationBarTitleText": "修改邮箱"
+			}
+		},
+		{
+			"path": "pages/update/mobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机"
+			}
+		},
+		{
+			"path": "pages/update/name",
+			"style": {
+				"navigationBarTitleText": "修改昵称"
+			}
+		},
+		{
+			"path": "pages/update/password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/order/submit",
+			"style": {
+				"navigationBarTitleText": "订单提交"
+			}
+		},
+		{
+			"path": "pages/order/selectaddr",
+			"style": {
+				"navigationBarTitleText": "选择地址"
+			}
+		},
+		{
+			"path": "pages/update/changeMobile",
+			"style": {
+				"navigationBarTitleText": "更换手机"
+			}
+		}
+
+	],
+	//全局样式配置
+	"globalStyle": {
+		//顶部栏文字颜色
+		"navigationBarTextStyle": "white",
+		//顶部栏文字
+		"navigationBarTitleText": "生鲜商城",
+		//顶部栏背景颜色
+		"navigationBarBackgroundColor": "#1296db",
+		//页面背景颜色
+		"backgroundColor": "#F8F8F8",
+		//打包成app时样式
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	//底部菜单配置
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar_icon/icon/首页-空.png",
+			"selectedIconPath": "static/tabbar_icon/icon/首页-选中.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/goods/group",
+			"iconPath": "static/tabbar_icon/icon/分类.png",
+			"selectedIconPath": "static/tabbar_icon/icon/分类-选中.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/cart/cart",
+			"iconPath": "static/tabbar_icon/icon/购物车空.png",
+			"selectedIconPath": "static/tabbar_icon/icon/购物车-选中.png",
+			"text": "购物车"
+		}, {
+			"pagePath": "pages/user/user",
+			"iconPath": "static/tabbar_icon/icon/我的.png",
+			"selectedIconPath": "static/tabbar_icon/icon/我的-选中.png",
+			"text": "我的"
+		}]
+	}
+
+}
